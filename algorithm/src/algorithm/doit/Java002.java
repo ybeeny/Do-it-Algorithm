@@ -8,17 +8,17 @@ public class Java002 {
 
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt();
-		int A[] = new int[N];
+		int arr[] = new int[N];
 		
 		for(int i = 0 ; i < N ; i++) {
-			A[i] = sc.nextInt();
+			arr[i] = sc.nextInt();
 		}
 	
 		long sum = 0;
 		long max = 0;
 		for(int i = 0 ; i < N ; i++) {
-			if(A[i] > max) max = A[i];
-			sum += A[i];
+			if(arr[i] > max) max = arr[i];
+			sum += arr[i];
 		}
 		System.out.println(sum * 100 / max / N);
 	}
